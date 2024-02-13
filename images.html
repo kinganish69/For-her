@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: #2E3537; */
+            /* background: url(img/1.jpg); */
+            background: url(img/giphy.gif);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            background-color: #000000;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 20px;
+            
+        }
+
+        .wrapper:before,
+        .wrapper:after {
+            content: "";
+            position: absolute;
+            height: 130px;
+            width: 150px;
+            z-index: 2;
+        }
+
+        .wrapper:after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        .wrapper:before {
+            left: 0;
+            top: 0;
+        }
+
+        .wrapper .track {
+            display: flex;
+            width: fit-content;
+            animation: scroll 30s 0.5s linear infinite;
+            
+        }
+
+        .wrapper .logo {
+            /* width: 150px; */
+            
+        }
+
+        .wrapper .logo img {
+            height: 500px;
+            
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(calc(-100%));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="wrapper">
+        <div class="track">
+            
+            <div class="logo">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/6.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/7.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/8.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/9.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/10.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/11.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/12.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/13.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/14.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/15.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/16.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/17.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/18.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/19.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/20.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/21.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/22.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/23.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/24.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/25.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/26.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/27.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/28.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/29.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/30.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/31.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/32.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/33.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/34.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/35.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/36.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/37.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/38.jpg" alt="">
+            </div>
+            <div class="logo">
+                <img src="img/39.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

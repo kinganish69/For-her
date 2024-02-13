@@ -1,0 +1,174 @@
+@import url('https://fonts.cdnfonts.com/css/valentine');
+
+body {
+    /* background-color: #ffffff; */
+    background-image: url(img/1.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+    position: absolute;
+
+}
+
+:root {
+    --cards: 4;
+    --cardHeight: 87vh;
+    --cardTopPadding: 1.5rem;
+    --cardMargin: 4vw;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    ;
+
+}
+
+#cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(--cards), var(--cardHeight);
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Love Ya Like A Sister';
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: cursive;
+    background: -webkit-linear-gradient(#d30000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.card-body ul li {
+    font-size: 20px;
+}
+
+.typing-text {
+    display: none;
+}
+
+
+#card1 {
+    --index: 1;
+}
+
+#card2 {
+    --index: 2;
+}
+
+#card3 {
+    --index: 3;
+}
+
+#card4 {
+    --index: 4;
+}
+
+#card5 {
+    --index: 5;
+}
+
+#card6 {
+    --index: 6;
+}
+
+.card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+    background-color: #52b2cf;
+    min-height: var(--cardHeight);
+    height: max-content;
+}
+
+#card2 .card-body {
+    background-color: #7ec4cf;
+    min-height: var(--cardHeight);
+    height: max-content;
+
+}
+
+#card3 .card-body {
+    background-color: #9cadce;
+    min-height: var(--cardHeight);
+    height: max-content;
+}
+
+#card4 .card-body {
+    background-color: #d4afb9;
+    min-height: var(--cardHeight);
+    height: max-content;
+
+}
+
+#card5 .card-body {
+    background-color: #fb648c;
+    min-height: var(--cardHeight);
+    height: max-content;
+
+}
+
+#card6 .card-body {
+    background-color: #875de9;
+    min-height: var(--cardHeight);
+    height: min-content;
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-btn-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last-btn {
+    /* display: flex; */
+    
+    background-color: rgb(255, 152, 152);
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 80px;
+    margin-top: -40px;
+}
+
+.last-btn a {
+    text-decoration: none;
+    color: black;
+    text-decoration: solid;
+
+}
+
+.last-btn:hover {
+    cursor: pointer;
+    background-color: #fb648c;
+}
